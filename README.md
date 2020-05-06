@@ -10,4 +10,4 @@
 
 ## Representing visually what we are doing here.
 ![GitHub Logo](/images/arch.png)
-Format: ![Alt Text](url)
+
