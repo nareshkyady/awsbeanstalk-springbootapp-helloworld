@@ -11,4 +11,5 @@
 ## Representing visually what we are doing here.
 ![GitHub Logo](/images/arch.png)
 
-## Step 1
+###### Step 1
+Create a simple spring boot application.
