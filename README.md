@@ -25,22 +25,23 @@ cool! we just built spring boot application!
 ###### step 2
 - create an aws account at aws.amazon.com
 - now follow these steps to create elastic beanstalk
+> create a new environment
 ![GitHub Logo](/images/ebs1.png)
-
+> choose web server environment
 ![GitHub Logo](/images/ebs2.png)
-
-![GitHub Logo](/images/ebs3.png)
-
+> enter application and environment details
 ![GitHub Logo](/images/ebs4.png)
-
+> choose platform and upload the jar created by maven build in above step 1
 ![GitHub Logo](/images/ebs5.png)
-
+> click on configure more options
 ![GitHub Logo](/images/ebs6.png)
 
+> choose custom configuration
 ![GitHub Logo](/images/ebs7.png)
 
+> enter the port 8080 (why? this is the port to access spring boot application
 ![GitHub Logo](/images/ebs8.png)
-
+> now, check the health of elastic bean stalk created.
 ![GitHub Logo](/images/ebs9.png)
 
 now, you have created elastic beanstalk (in layman terms, it just create an instance of linux environment, a security group created, created elastic ip)
