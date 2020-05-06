@@ -26,8 +26,15 @@ cool! we just built spring boot application!
 - create an aws account at aws.amazon.com
 - now follow these steps to create elastic beanstalk
 ![GitHub Logo](/images/ebs1.png)
+
 ![GitHub Logo](/images/ebs2.png)
+
 ![GitHub Logo](/images/ebs3.png)
+
 ![GitHub Logo](/images/ebs4.png)
+
 ![GitHub Logo](/images/ebs5.png)
+
 ![GitHub Logo](/images/ebs6.png)
+
+now, you have created elastic beanstalk (in layman terms, it just create an instance of linux environment, a security group created, created elastic ip)
