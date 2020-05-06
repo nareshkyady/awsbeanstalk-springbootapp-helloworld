@@ -63,7 +63,7 @@ now, you have created elastic beanstalk (in layman terms, it just create an inst
 > once connected, choose repository and branch
 ![GitHub Logo](/images/cp3.png)
 
-> add build stage, click project
+> add build stage, click create project
 ![GitHub Logo](/images/cp4.png)
 
 ![GitHub Logo](/images/cp5.png)
