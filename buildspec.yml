@@ -7,7 +7,6 @@ phases:
     commands:
       - echo "Entered build phase"
       - mvn clean install
-      - becho
   post_build:
     commands:
       - echo "Entered post-build phase"
