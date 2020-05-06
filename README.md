@@ -23,3 +23,11 @@ Create a simple spring boot application in your favorite IDE, eclipse/intellij o
 cool! we just built spring boot application!
 
 ###### step 2
+- create an aws account at aws.amazon.com
+- now follow these steps to create elastic beanstalk
+![GitHub Logo](/images/ebs1.png)
+![GitHub Logo](/images/ebs2.png)
+![GitHub Logo](/images/ebs3.png)
+![GitHub Logo](/images/ebs4.png)
+![GitHub Logo](/images/ebs5.png)
+![GitHub Logo](/images/ebs6.png)
