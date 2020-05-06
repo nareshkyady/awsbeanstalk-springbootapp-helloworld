@@ -37,4 +37,10 @@ cool! we just built spring boot application!
 
 ![GitHub Logo](/images/ebs6.png)
 
+![GitHub Logo](/images/ebs7.png)
+
+![GitHub Logo](/images/ebs8.png)
+
+![GitHub Logo](/images/ebs9.png)
+
 now, you have created elastic beanstalk (in layman terms, it just create an instance of linux environment, a security group created, created elastic ip)
