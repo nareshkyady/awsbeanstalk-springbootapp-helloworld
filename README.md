@@ -6,7 +6,8 @@
   - Github (Code Repository)
   - AWS Code Pipeline (Code Build, Code Deploy)
   - AWS S3 (To store artifacts eg. .jar files)
-  - 
+  - AWS ElasticBeanStalk
 
+## Representing visually what we are doing here.
 ![GitHub Logo](/images/arch.png)
 Format: ![Alt Text](url)
