@@ -25,16 +25,15 @@ cool! we just built spring boot application!
 ###### step 2
 - create an aws account at aws.amazon.com
 - now follow these steps to create elastic beanstalk
+> create a new environment
 ![GitHub Logo](/images/ebs1.png)
-
+> choose web server environment
 ![GitHub Logo](/images/ebs2.png)
-
-![GitHub Logo](/images/ebs3.png)
-
+> choose platform
 ![GitHub Logo](/images/ebs4.png)
-
+> upload the jar created by maven build in above step 1
 ![GitHub Logo](/images/ebs5.png)
-
+> click on configure more options
 ![GitHub Logo](/images/ebs6.png)
 
 choose custom configuration
