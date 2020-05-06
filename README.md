@@ -37,8 +37,10 @@ cool! we just built spring boot application!
 
 ![GitHub Logo](/images/ebs6.png)
 
+choose custom configuration
 ![GitHub Logo](/images/ebs7.png)
 
+enter the port 8080 (why? this is the port to access spring boot application
 ![GitHub Logo](/images/ebs8.png)
 
 ![GitHub Logo](/images/ebs9.png)
