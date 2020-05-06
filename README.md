@@ -11,3 +11,4 @@
 ## Representing visually what we are doing here.
 ![GitHub Logo](/images/arch.png)
 
+## Step 1
