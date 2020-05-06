@@ -12,4 +12,11 @@
 ![GitHub Logo](/images/arch.png)
 
 ###### Step 1
-Create a simple spring boot application.
+Create a simple spring boot application in your favorite IDE, eclipse/intellij or you can checkout the code committed here.
+
+###### after step 1
+Perform maven clean build
+Run the spring boot application
+output should be below
+![GitHub Logo](/images/step1-ouput.png)
+
