@@ -1,5 +1,5 @@
 # awsbeanstalk-springbootapp-helloworld
 
 
-![GitHub Logo](/images/logo.png)
+![GitHub Logo](/images/arch.png)
 Format: ![Alt Text](url)
