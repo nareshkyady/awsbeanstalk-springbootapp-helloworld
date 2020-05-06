@@ -6,7 +6,7 @@ phases:
   build:
     commands:
       - echo "Entered build phase"
-      - mvn clean package
+      - mvn clean install
   post_build:
     commands:
       - echo "Entered post-build phase"
@@ -14,4 +14,4 @@ phases:
 
 artifacts:
   files:
-    - deploy/lib/**/*
+    - deploy/final/**/*

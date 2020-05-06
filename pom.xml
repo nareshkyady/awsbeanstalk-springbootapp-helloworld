@@ -7,13 +7,15 @@
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.2.6.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
+
 	</parent>
+
 	<groupId>com.nkyd</groupId>
 	<artifactId>awsbeanstalk-springbootapp-helloworld</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>awsbeanstalk-springbootapp-helloworld</name>
 	<description>AWS beanstalk spring boot app hello world</description>
-
+	<packaging>jar</packaging>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -54,70 +56,39 @@
 	<build>
 		<plugins>
 			<plugin>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<configuration>
-					<archive>
-						<manifest>
-							<mainClass>com.nkyd.ebs.sboot.hworld.AwsEbsSBootHWorldApplication</mainClass>
-						</manifest>
-					</archive>
-					<descriptorRefs>
-						<descriptorRef>jar-with-dependencies</descriptorRef>
-					</descriptorRefs>
-				</configuration>
-				<executions>
-					<execution>
-						<id>make-assembly</id> <!-- this is used for inheritance merges -->
-						<phase>package</phase> <!-- bind to the packaging phase -->
-						<goals>
-							<goal>single</goal>
-						</goals>
-						<configuration>
-							<outputDirectory>${project.build.directory}/deploy/lib</outputDirectory>
-							<overWriteReleases>false</overWriteReleases>
-							<overWriteSnapshots>false</overWriteSnapshots>
-							<overWriteIfNewer>true</overWriteIfNewer>
-						</configuration>
-					</execution>
-				</executions>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-		</plugins>
-		<!--<plugins>
-		<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-dependency-plugin</artifactId>
-			<executions>
-				<execution>
-					<id>copy-dependencies</id>
-					<phase>prepare-package</phase>
-					<goals>
-						<goal>copy-dependencies</goal>
-					</goals>
-					<configuration>
-						<outputDirectory>${project.build.directory}/final/lib</outputDirectory>
-						<overWriteReleases>false</overWriteReleases>
-						<overWriteSnapshots>false</overWriteSnapshots>
-						<overWriteIfNewer>true</overWriteIfNewer>
-					</configuration>
-				</execution>
-			</executions>
-		</plugin>
-		<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-jar-plugin</artifactId>
-			<configuration>
-				<archive>
-					<manifest>
-						<addClasspath>true</addClasspath>
-						<classpathPrefix>lib/</classpathPrefix>
-						<mainClass>com.nkyd.ebs.sboot.hworld.AwsEbsSBootHWorldApplication</mainClass>
-					</manifest>
-				</archive>
-				<finalName>final/awsebs-sboot-hworld</finalName>
-			</configuration>
-		</plugin>
-		</plugins>-->
 
+
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-dependency-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>copy-installed</id>
+								<phase>install</phase>
+								<goals>
+									<goal>copy</goal>
+								</goals>
+								<configuration>
+									<artifactItems>
+										<artifactItem>
+											<groupId>${project.groupId}</groupId>
+											<artifactId>${project.artifactId}</artifactId>
+											<version>${project.version}</version>
+											<type>jar</type>
+											<destFileName>awsbeanstalk-springbootapp-helloworld.jar</destFileName>
+										</artifactItem>
+									</artifactItems>
+									<outputDirectory>target/final</outputDirectory>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+
+
+		</plugins>
 	</build>
 
 </project>
