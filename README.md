@@ -11,10 +11,10 @@
 ## Representing visually what we are doing here.
 ![GitHub Logo](/images/arch.png)
 
-###### step 1
+### step 1
 Create a simple spring boot application in your favorite IDE, eclipse/intellij or you can checkout the code committed here.
 
-###### after step 1
+### after step 1
 - Perform maven clean build
 - Run the spring boot application
 - output should be below
@@ -22,7 +22,7 @@ Create a simple spring boot application in your favorite IDE, eclipse/intellij o
 
 cool! we just built spring boot application!
 
-###### step 2
+### step 2
 - create an aws account at aws.amazon.com
 - now follow these steps to create elastic beanstalk
 
@@ -52,7 +52,7 @@ cool! we just built spring boot application!
 
 now, you have created elastic beanstalk (in layman terms, it just create an instance of linux environment, a security group created, created elastic ip)
 
-###### step 3
+### step 3
 - go to code pipeline
 > name it
 ![GitHub Logo](/images/cp1.png)
@@ -68,7 +68,6 @@ now, you have created elastic beanstalk (in layman terms, it just create an inst
 
 ![GitHub Logo](/images/cp5.png)
 
-
 > choose a name and linux environment
 ![GitHub Logo](/images/cp6.png)
 
@@ -80,3 +79,12 @@ now, you have created elastic beanstalk (in layman terms, it just create an inst
 > add deploy stage, select application name and environment name
 ![GitHub Logo](/images/cp9.png)
 
+> create pipeline!
+
+code pipeline is created successfully now!!!
+
+### whats now!
+- its all done now!
+- start checking in the code now and see how it kicks in the code build, code deploy and sends it to ecs.
+- you can see artifacts in S3 created (for reference)
+- hit the ecs url http://awsbeanstalk-springbootapp-helloworld.us-east-1.elasticbeanstalk.com/hello and you should be able to see the results which you saw in local (step 1)
