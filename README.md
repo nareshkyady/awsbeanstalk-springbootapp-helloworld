@@ -54,22 +54,22 @@ now, you have created elastic beanstalk (in layman terms, it just create an inst
 
 ###### step 3
 - go to code pipeline
-
+> name it
 ![GitHub Logo](/images/cp1.png)
-
+> add source stage to be github, click on connect to github
 ![GitHub Logo](/images/cp2.png)
-
+> once connected, choose repository and branch
 ![GitHub Logo](/images/cp3.png)
-
+> add build stage, click project
 ![GitHub Logo](/images/cp4.png)
-
+> choose a name and linux environment
 ![GitHub Logo](/images/cp5.png)
-
+> give buildspec name as buildspec.yml (which is commited in this project)
 ![GitHub Logo](/images/cp6.png)
 
 ![GitHub Logo](/images/cp7.png)
 
 ![GitHub Logo](/images/cp8.png)
-
+> add deploy stage, select application name and environment name
 ![GitHub Logo](/images/cp9.png)
 
