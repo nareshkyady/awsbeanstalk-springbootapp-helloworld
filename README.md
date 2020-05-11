@@ -88,3 +88,4 @@ code pipeline is created successfully now!!!
 - start checking in the code now and see how it kicks in the code build, code deploy and sends it to ecs.
 - you can see artifacts in S3 created (for reference)
 - hit the ecs url http://awsbeanstalk-springbootapp-helloworld.us-east-1.elasticbeanstalk.com/hello and you should be able to see the results which you saw in local (step 1)
+ 
