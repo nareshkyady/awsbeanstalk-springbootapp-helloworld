@@ -18,7 +18,7 @@ Create a simple spring boot application in your favorite IDE, eclipse/intellij o
 - Perform maven clean build
 - Run the spring boot application
 - output should be below
-![GitHub Logo](/images/step1-output.png)
+![GitHub Logo](/images/step-1-output.png)
 
 cool! we just built spring boot application!
 
